@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-primary">
     <div class="container">
-        <a class="navbar-brand" routerLink='/'routerLinkActive='active' >Matromonail App</a>
+        <a class="navbar-brand" routerLink='/'routerLinkActive='active' >Connecting Hearts</a>
 
 
         <ul class="navbar-nav mr-auto" >
@@ -19,10 +19,6 @@
                 <a class="nav-link" routerLink='/errors'routerLinkActive='active'>Errors</a>
             </li>
         </ul>
-
-
-
-
         <div class="dropdown" *ngIf="(accountService.currentUser$ | async) as user" dropdown>
             <a class="dropdown-toggle text-light" dropdownToggle>welcome {{user.username | titlecase}}</a>
             <div class="dropdown-menu mt-3" *dropdownMenu>
