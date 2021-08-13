@@ -22,13 +22,13 @@ export class MembersService {
 
 
   getMembers() {
-    return this.http.get<Member[]>(this.baseUrl + 'users');
+    return this.http.get<Member[]>(this.baseUrl + 'users', httpOptions);
   }
 
   getMember(username: string) {
-    return this.http.get<Member>(this.baseUrl + 'users/' + username);
+    return this.http.get<Member>(this.baseUrl + 'users/' + username, httpOptions);
   }
   updateMember(member: Member){
-    return this.http.put(this.baseUrl + 'users', member);
+    return this.http.put(this.baseUrl + 'users', member,httpOptions);
   }
 }
