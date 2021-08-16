@@ -9,6 +9,10 @@
     transform: scale(1.0, 1.0);
     transition-duration: 500ms;
     transition-timing-function: ease-out;
+    border: 1px solid #eb6864;
+    border-radius: 5px;
+
+
 }
 
 .card-img-wrapper {
