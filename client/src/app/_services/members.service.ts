@@ -20,7 +20,6 @@ export class MembersService {
 
   constructor(private http: HttpClient) { }
 
-
   getMembers() {
     return this.http.get<Member[]>(this.baseUrl + 'users', httpOptions);
   }
@@ -28,10 +27,16 @@ export class MembersService {
   getMember(username: string) {
     return this.http.get<Member>(this.baseUrl + 'users/' + username, httpOptions);
   }
+
   updateMember(member: Member){
     return this.http.put(this.baseUrl + 'users', member,httpOptions);
   }
+
   setMainPhoto(photoId: number) {
     return this.http.put(this.baseUrl + 'users/set-main-photo/' + photoId, {},httpOptions);
+  }
+
+  deletePhoto(photoId: number) {
+    return this.http.delete(this.baseUrl + 'users/delete-photo/' + photoId,httpOptions);
   }
 }
