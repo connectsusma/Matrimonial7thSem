@@ -1,0 +1,99 @@
+
+  .register {
+    padding: 70px 100px;
+  }
+  .form-box,
+  .form-select {
+    border-radius: 20px;
+  }
+  .image_section {
+    padding-top: 100px;
+  }
+  .image_section img {
+    height: 700px;
+  }
+  .btn-detail {
+    border-radius: 20px;
+    background-color: coral;
+    border-color: coral;
+    color: white;
+  }
+  .btn-detail:hover {
+    background-color: white;
+    border-color: coral;
+    color: rgb(139, 139, 139);
+  }
+  
+  .banner_intro {
+    color: white;
+    padding-top: 100px;
+  }
+  .register_info {
+    background-image: linear-gradient(
+      rgb(246, 214, 214) 0%,
+      rgb(246, 214, 214) 100%
+    );
+    border-radius: 20px;
+    padding: 30px;
+  }
+  .btn-counsel{
+    border-radius: 15px;
+  }
+  /*footer*/
+  footer{
+    background-color: rgb(42, 39, 51);
+    color: white;
+    padding-top: 3rem;
+  }
+  footer ul{
+    padding: 0;
+    list-style: none;
+  }
+  footer ul li a{
+    text-decoration: none;
+    color: white;
+  }
+  footer ul li a:hover{
+    color: white;
+  }
+  footer i{
+    margin-right: 15px;
+    height: 25px;
+    width: 25px;
+    border-radius: 5px;
+    color: white;
+    text-align: center;
+    padding-top: 4px;
+  }
+  .social li{
+    display: inline;
+  }
+  .social .facebook{
+    background-color :#3B5998;
+  }
+  .social .instagram{
+    background-color:RGB(253, 29, 29);
+  }
+  .social .twitter{
+    background-color :#0e76a8;
+  }
+  .foot_title h3{
+    color: rgb(209, 209, 209);
+  }
+  .footer-bottom{
+    padding: 5px 0;
+    background-color: rgb(20, 19, 24);
+  }
+  .third_party .image a{
+    text-decoration: none;
+    color: black;
+  }
+  .planners .planner a{
+    text-decoration: none;
+    color: black;
+  }
+  
+  .reception .venue a{
+    text-decoration: none;
+    color: black;
+  }

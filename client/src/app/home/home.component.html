@@ -1,24 +1,187 @@
-<div class="bg-overlay" style="background-image: url(images/main.jpg); background-repeat: no-repeat; background-size: cover; width: 100%; height: 700px;">
 
-<div class="container mt-5">
+<section class="banner_section">
+    <div class="banner">
+      <div class="bg-overlay" style="background-image: url(./assets/main.jpg); background-repeat: no-repeat; background-size: cover; width: auto; height: 700px;">
 
-
-    <div *ngIf="!registerMode" style='text-align: center;'>
-        <h1>Find your match</h1>
-        <p class="lead">Come on in to view your matches... all you need to do is sign up!</p>
-        <div class="text-center">
-            <button (click)="registerToggle()" class="btn btn-primary btn-lg mr-2">Register</button>
-            <button class="btn btn-info btn-lg">Learn more</button>
+    <div class="container">
+        <div class="banner_intro" *ngIf="!registerMode" style='text-align: center;'>
+            <h1>Find your match</h1>
+            <p class="lead">Come on in to view your matches... all you need to do is sign up!</p>
+            <div class="text-center">
+                <button (click)="registerToggle()" class="btn btn-primary btn-lg mr-2">Register</button>
+                <button class="btn btn-info btn-lg">Learn more</button>
+            </div>
         </div>
-    </div>
 
-    <div *ngIf="registerMode" class="container">
-        <div class="row justify-content-center">
-            <div class="col-4">
-                <app-register (cancelRegister)="cancelRegisterMode($event)" ></app-register>
+        <div *ngIf="registerMode" class="container">
+            <div class="row justify-content-center">
+                <div class="col-4">
+                    <app-register (cancelRegister)="cancelRegisterMode($event)"></app-register>
+                </div>
             </div>
         </div>
     </div>
+    </div>
+    </div>
+    </section>
+    <section class="register_intro">
+        <div class="text-center pt-5 pb-5">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-4 mb-3">
+                <div class="register_info">
+                  <div class="register_image">
+                    <img src="./assets/register.png" class="img-fluid">
+                  </div>
+                  <h4 class="intro">
+                    Register & Verify
+                  </h4>
+                  <span>Register yourself and verify</span>
+                </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <div class="register_info">
+                  <div class="register_image">
+                    <img src="./assets/search.png" class="img-fluid">
+                  </div>
+                  <h4 class="intro">
+                    Search & Match
+                  </h4>
+                  <span>Select your preferance and match</span>
+                </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <div class="register_info">
+                  <div class="register_image">
+                    <img src="./assets/connect.png" class="img-fluid">
+                  </div>
+                  <h4 class="intro">
+                    Connect and talk
+                  </h4>
+                  <span>Connect with your match and meet</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="offline_counseling pt-5 pb-5 bg-light">
+        <div class="container">
+          <div class="counseling text-center pb-4">
+            <h3 class="title">
+              OFFLINE COUNSELING
+            </h3>
+            <p>Request For an Appointment and get offline counseling with us.</p>
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="form_section">
+                <form action="mailto:susmasagarbhattarai@gmail.com" method="POST" enctype="text/plain">
+                <div class="col-md-12 mb-3">
+                  <input type="text" name="name" class="form-control form-box"  placeholder="Full Name">
+                </div>
+                <div class="row">
+                  <div class="col-md-6 mb-3">
+                    <input type="email" name="email" class="form-control form-box"  placeholder="Email">
+                  </div>
+                  <div class="col-md-6 mb-3">
+                    <input type="Text" name="mobile" class="form-control form-box"  placeholder="Mobile Number">
+                  </div>
+                </div>
+                <!-- <div class="row">
+                  <div class="col-md-6 mb-3">
+                    <select id="inputState" name="for" class="form-select" required="">
+                      <option selected>--Select For--</option>
+                      <option>Self</option>
+                      <option>Son</option>
+                      <option>Daughter</option>
+                      <option>Brother</option>
+                      <option>Sister</option>
+                      <option>Other</option>
+                    </select>
+                  </div>  -->
+                  <!-- <div class="col-md-6 mb-3">
+                    <select id="inputState" name="services" class="form-select" required="">
+                      <option selected>--Counseling For--</option>
+                      <option>Life Partner</option>
+                      <option>Legal Counseling</option>
+                      <option>Astrology Service</option>
+                      <option>Caterine Service</option>
+                    </select>
+                  </div> -->
+                  <div class="col-md-12 mb-3">
+                    <textarea name="message" id="" cols="30" rows="6" class="form-control form-box" placeholder="Any Special Message?"></textarea>
+                  </div>
+                  <div class="row justify-content-center">
+                  <div class="col-md-6">
+                    <button type="submit" value="Send" class="btn btn-outline-danger w-75 btn-counsel">Submit</button>
+                  </div>
+                  </div>
+                
+              </form>
+              </div>
+              
+            </div>
+            <div class="col-md-6">
+              <div class="image">
+                <img src="./assets/counsel.jpg" class="img-fluid">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer>
+        <div class="footer-top pt-3">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="foot_title">
+                            <h3 class="mb-3">Quick Links</h3>
+                            <ul>
+                                <li><a href="about.html">About US</a></li>
+                                <li><a href="services.html"> Services</a></li>
+                                <li><a href="contact.html">Contact Us</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="foot_title">
+                            <h3 class="mb-3">Privacy</h3>
+                            <ul>
+                              <li><a href="terms.html">Terms & Conditions</a></li>
+                              <li><a href="privacypolicy.html">Privacy Policy</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="foot_title">
+                            <h3 class="mb-3">Contact Us</h3>
+                            <ul>
+                                <li><i class="fa fa-phone" aria-hidden="true"></i> 9828019434</li>
+                                <li><i class="fa fa-envelope"></i>connecting_hearts@gmail.com</li>
+                                <li><i class="fa fa-map-marker" aria-hidden="true"></i>Kathmandu, Nepal</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="foot_title social">
+                            <h3 class="mb-3">Social</h3>
+                            <h6>Follow Us On:</h6>
+                             <ul>
+                                <li><a href="https://www.facebook.com/connecting_hearts" target="blank"> <i class="fa fa-facebook facebook"></i></a></li>
+                                <li><a href="https://www.instagram.com/connecting_hearts/" target="blank"> <i class="fa fa-instagram instagram"></i></a></li>
+                                <li><a href="twitter/connecting_hearts" target="blank"> <i class="fa fa-twitter twitter"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     
-</div>
-</div>
+    <div class="footer-bottom text-center">
+        <h6>Copyright &copy; 2021 Connecting Hearts</h6>
+    </div>  
+  </footer>
+

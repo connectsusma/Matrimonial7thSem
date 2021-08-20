@@ -29,6 +29,7 @@ import { TextInputComponent } from './_forms/text-input/text-input.component';
 import { DateInputComponent } from './_forms/date-input/date-input.component';
 import { JwtInterceptor } from './_interceptors/jwt.interceptor';
 import { MemberMessagesComponent } from './members/member-messages/member-messages.component';
+import { EventManagerComponent } from './event-manager/event-manager.component';
 
 @NgModule({
   declarations: [
@@ -49,6 +50,7 @@ import { MemberMessagesComponent } from './members/member-messages/member-messag
     TextInputComponent,
     DateInputComponent,
     MemberMessagesComponent,
+    EventManagerComponent,
     
   ],
   imports: [

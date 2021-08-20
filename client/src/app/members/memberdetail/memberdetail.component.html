@@ -1,11 +1,19 @@
-<div class="row" >
+<div class="container" style="margin-top: 100px;">
+    <div class="row" >
     <div class="col-4">
         <div class="card">
             <img src="{{member.photoUrl || './assets/user.png'}}" alt="{{member.knownAs}}" 
                 class="card-img-top img-thumbnail">
             <div class="card-body">
                 <div class="mb-2"  >
-                    <i class="fa fa-user-circle text-success"></i> Online now
+                </div>
+                <div>
+                    <strong>Name:</strong>
+                    <p>{{member.knownAs}}</p>
+                </div>
+                <div>
+                    <strong>Gender:</strong>
+                    <p>{{member.gender}}</p>
                 </div>
                 <div>
                     <strong>Location:</strong>
@@ -19,10 +27,7 @@
                     <strong>Last Active:</strong>
                     <p>{{member.lastActive | timeago}}</p>
                 </div>
-                <div>
-                    <strong>Member since:</strong>
-                    <p>{{member.created | date: 'dd MMM yyyy'}}</p>
-                </div>
+                
             </div>
             <div class="card-footer">
                 <div class="btn-group d-flex">
@@ -55,4 +60,5 @@
             </tab>
         </tabset>
     </div>
+</div>
 </div>
